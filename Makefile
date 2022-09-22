@@ -13,7 +13,7 @@ build:
 	mvn package
 
 run-jar: build
-	java -jar target/spring-gumball-1.0.jar
+	java -jar target/spring-gumball-2.1.jar
 
 # Docker
 
@@ -35,8 +35,8 @@ docker-shell:
 
 docker-push:
 	docker login
-	docker build --platform=linux/amd64 -t $(account)/spring-gumball:v1.0 .
-	docker push $(account)/spring-gumball:v1.0 
+	docker build --platform=linux/amd64 -t $(account)/spring-gumball:v2.1 .
+	docker push $(account)/spring-gumball:v2.1
 
 # Compose
 
@@ -44,7 +44,7 @@ network-ls:
 	docker network ls 
 
 network-create:
-	docker network create --driver bridge $(network)
+	docker network create --driver bridge ${network}
 
 network-prune:
 	docker network prune
