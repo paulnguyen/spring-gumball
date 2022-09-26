@@ -13,7 +13,7 @@ build:
 	mvn package
 
 run-jar: build
-	java -jar target/spring-gumball-3.0.jar
+	java -jar target/spring-gumball-3.1.jar
 
 
 # MySQL DB

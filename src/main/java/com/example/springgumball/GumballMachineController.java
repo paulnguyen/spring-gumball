@@ -31,12 +31,12 @@ import com.example.gumballmachine.GumballMachine ;
 
 @Slf4j
 @Controller
-@RequestMapping("/")
+@RequestMapping("/gumball")
 public class GumballMachineController {
 
-	private static String KEY = "kwRg54x2Go9iEdl49jFENRM12Mp711QI" ;
-    private static String MODEL_NUMBER = "SB102927" ;
-    private static String SERIAL_NUMBER = "2134998871109" ;
+	private static final String KEY = "kwRg54x2Go9iEdl49jFENRM12Mp711QI" ;
+    private static final String MODEL_NUMBER = "SB102927" ;
+    private static final String SERIAL_NUMBER = "2134998871109" ;
 
     private GumballModel gmachine ;    
 
@@ -206,9 +206,9 @@ public class GumballMachineController {
         long ts2 = java.lang.System.currentTimeMillis() ;
         long diff = ts2 - ts1 ;
 
-        log.info( "Input Timestamp: " + String.valueOf(ts1) ) ;
-        log.info( "Current Timestamp: " + String.valueOf(ts2) ) ;
-        log.info( "Timestamp Delta: " + String.valueOf(diff) ) ;
+        log.info( "Input Timestamp: " + ts1) ;
+        log.info( "Current Timestamp: " + ts2) ;
+        log.info( "Timestamp Delta: " + diff) ;
 
         // Guard Against Replay Attack
         if ( (diff/1000) > 1000 ) {
@@ -273,7 +273,7 @@ public class GumballMachineController {
         if ( input_state.equals("com.example.gumballmachine.HasQuarterState") 
              && state.equals("com.example.gumballmachine.NoQuarterState") ) {
             Integer count = found.getCountGumballs() ;
-            found.setCountGumballs( new Integer(count.intValue() - 1) ) ;
+            found.setCountGumballs(Integer.valueOf(count.intValue() - 1)) ;
             mysql.save(found) ;
         }
 

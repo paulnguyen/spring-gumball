@@ -5,10 +5,10 @@ public class GumballMachine {
 	private String modelNumber;
 	private String serialNumber;
 
-	private State soldOutState;
+	private final State soldOutState;
 	private State noQuarterState;
-	private State hasQuarterState;
-	private State soldState;
+	private final State hasQuarterState;
+	private final State soldState;
 	private State state = noQuarterState ;
  
 	public GumballMachine() {
@@ -93,13 +93,12 @@ public class GumballMachine {
     }
  
 	public String toString() {
-		StringBuffer result = new StringBuffer();
-		result.append("Mighty Gumball, Inc.");
-		result.append("\nSpring Boot Standing Gumball");
-		result.append("\n");
-		result.append("Model # " + modelNumber + "  Serial # " + serialNumber ) ;
-		result.append("\n\n");
-		result.append("\nMachine is " + state + "\n");
-		return result.toString();
+        String result = "Mighty Gumball, Inc." +
+                "\nSpring Boot Standing Gumball" +
+                "\n" +
+                "Model # " + modelNumber + "  Serial # " + serialNumber +
+                "\n\n" +
+                "\nMachine is " + state + "\n";
+		return result;
 	}
 }
