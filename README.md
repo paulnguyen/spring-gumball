@@ -28,23 +28,22 @@
 	* With JPA/MySQL Database Support
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
-	* Default CSRF Protection Enabled
 * Added Spring Security Bare Bones Configuration Class
 * Added In-Memory User Config for Authentication
 * Disabled CSRF Protection for POST Processing
 
-	Spring Security:
+Spring Security:
 	
-	* https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/storage.html
+* https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/storage.html
 	
-	Storage Mechanisms
+Storage Mechanisms
 	
-	Each of the supported mechanisms for reading a username and password can leverage any of 
-	the supported storage mechanisms:
+Each of the supported mechanisms for reading a username and password can leverage any of 
+the supported storage mechanisms:
 	
-	    * Simple Storage with In-Memory Authentication
-	    * Relational Databases with JDBC Authentication
-	    * Custom data stores with UserDetailsService
-	    * LDAP storage with LDAP Authentication
+* Simple Storage with In-Memory Authentication
+* Relational Databases with JDBC Authentication
+* Custom data stores with UserDetailsService
+* LDAP storage with LDAP Authentication
 
 
