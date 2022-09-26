@@ -26,7 +26,6 @@
 * Port of 3.0 from Spring Boot 2.6 to 2.7
 	* Implementation of HMAC HASH version
 	* With JPA/MySQL Database Support
-	* Project Ported over to Spring Boot 2.7
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
 	* Default CSRF Protection Enabled
