@@ -9,7 +9,6 @@
 	* With JPA/MySQL Database Support
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
-	* Default CSRF Protection Enabled
 
 * Added Spring Security Bare Bones Configuration Class
 * Added In-Memory User Config for Authentication
