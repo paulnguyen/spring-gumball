@@ -49,3 +49,22 @@ the supported storage mechanisms:
 * LDAP storage with LDAP Authentication
 
 
+### Version 3.2
+
+* Added Support for CSRF Protection
+* Added Login Controller & Custom Login Page
+* Note: CSRF will not work behind a Load Balancer
+  (Need to use Spring Session + Redis)
+
+Cross Site Request Forgery (CSRF)
+
+* https://docs.spring.io/spring-security/reference/features/exploits/csrf.html
+* https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html
+
+Custom Login Form Example
+
+* https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/form.html
+* https://codepen.io/khadkamhn/pen/ZGvPLo
+
+
+
