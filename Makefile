@@ -13,7 +13,7 @@ build:
 	mvn package
 
 run-jar: build
-	java -jar target/spring-gumball-3.1.jar
+	java -jar target/spring-gumball-3.2.jar
 
 
 # MySQL DB
@@ -47,8 +47,8 @@ docker-shell:
 
 docker-push:
 	docker login
-	docker build --platform=linux/amd64 -t $(account)/spring-gumball:v3.0 -t $(account)/spring-gumball:v3.0 .
-	docker push $(account)/spring-gumball:v3.0
+	docker build --platform=linux/amd64 -t $(account)/spring-gumball:v3.2 -t $(account)/spring-gumball:v3.2 .
+	docker push $(account)/spring-gumball:v3.2
 
 # Compose
 

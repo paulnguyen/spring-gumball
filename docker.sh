@@ -4,7 +4,7 @@
 
 ACCOUNT="paulnguyen"
 CONTAINER="spring-gumball"
-VERSION="v3.1"
+VERSION="v3.2"
 
 # Shell Variables
 
