@@ -1,15 +1,35 @@
 # Spring Gumball
 
 
+### Version 1.0
+
+* Session based version
+
+
+### Version 2.0
+
+* Modification of Version 1 to Remove Session
+* Starter Code for Sessionless / HMAC HASH version
+
+
+### Version 2.1
+
+* Implementation of HMAC HASH version
+
+
+### Version 3.0
+
+* Added JPA/MySQL Database Support
+* Added Special Instructions (for testing reflective XSS)
+
+
 ### Version 3.1 
 
 * Port of 3.0 from Spring Boot 2.6 to 2.7
-
 	* Implementation of HMAC HASH version (with Injected Config)
 	* With JPA/MySQL Database Support
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
-
 * Added Spring Security Bare Bones Configuration Class
 * Added In-Memory User Config for Authentication
 * Disabled CSRF Protection for POST Processing
@@ -27,6 +47,5 @@ the supported storage mechanisms:
 * Relational Databases with JDBC Authentication
 * Custom data stores with UserDetailsService
 * LDAP storage with LDAP Authentication
-
 
 
