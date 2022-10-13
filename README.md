@@ -26,13 +26,16 @@
 ### Version 3.1 
 
 * Port of 3.0 from Spring Boot 2.6 to 2.7
+
 	* Implementation of HMAC HASH version (with Injected Config)
 	* With JPA/MySQL Database Support
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
+
 * Added Spring Security Bare Bones Configuration Class
 * Added In-Memory User Config for Authentication
 * Disabled CSRF Protection for POST Processing
+* Added Home Controller (Redirects to Console)
 
 Spring Security:
 	
@@ -47,5 +50,7 @@ the supported storage mechanisms:
 * Relational Databases with JDBC Authentication
 * Custom data stores with UserDetailsService
 * LDAP storage with LDAP Authentication
+
+
 
 
