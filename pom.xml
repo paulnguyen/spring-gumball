@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>spring-gumball</artifactId>
-    <version>3.2</version>
+    <version>3.3</version>
     <name>spring-gumball</name>
     <description>spring-gumball</description>
     <properties>
@@ -18,6 +18,18 @@
         <testcontainers.version>1.17.3</testcontainers.version>
     </properties>
     <dependencies>
+
+        <!-- Spring Boot Session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- Spring Boot Session -->
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -84,6 +96,7 @@
             <artifactId>mysql</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
