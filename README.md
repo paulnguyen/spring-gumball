@@ -26,13 +26,16 @@
 ### Version 3.1 
 
 * Port of 3.0 from Spring Boot 2.6 to 2.7
+
 	* Implementation of HMAC HASH version (with Injected Config)
 	* With JPA/MySQL Database Support
 	* With Spring Security Added
 	* Default Spring Security Login Form Enabled
+
 * Added Spring Security Bare Bones Configuration Class
 * Added In-Memory User Config for Authentication
 * Disabled CSRF Protection for POST Processing
+* Added Home Controller (Redirects to Console)
 
 Spring Security:
 	
@@ -53,8 +56,9 @@ the supported storage mechanisms:
 
 * Added Support for CSRF Protection
 * Added Login Controller & Custom Login Page
-* Note: CSRF will not work behind a Load Balancer
-  (Need to use Spring Session + Redis)
+	* Login Page & CSRF will not work behind a Load Balancer 
+	* Need to use Spring Session + Redis
+	* Workaround is to Enabled LB Sticky Sessions
 
 Cross Site Request Forgery (CSRF)
 
@@ -65,6 +69,9 @@ Custom Login Form Example
 
 * https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/form.html
 * https://codepen.io/khadkamhn/pen/ZGvPLo
+
+
+
 
 
 
