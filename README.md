@@ -77,6 +77,7 @@ Custom Login Form Example
 * Added Redis In-Memory Database Service
 * Add Spring Session to Replicate CSRF Tokens
 * Configured Spring Session to use Redis as Session Store
+* Added Logout Button to end Session
 
 Scaling Out with Spring Sessions
 
@@ -92,6 +93,7 @@ Redis Documentation
 * https://redis.io/docs/manual/security
 * https://cloud.google.com/memorystore/docs/redis
 * https://www.baeldung.com/spring-session
+
 
 Redis Config
 
@@ -122,7 +124,14 @@ apt install redis-server
 redis-cli -h <host> -p 6379
 auth <password>
 keys '*'
+set <key> "<value>"
+get <key>
 ```
+
+* https://redis.io/commands
+* https://redis.io/commands/set
+* https://redis.io/commands/get
+
 
 
 
